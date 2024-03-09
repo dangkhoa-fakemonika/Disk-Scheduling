@@ -22,7 +22,7 @@ def fifo(screen, entries, x_dist, y_dist):
     pygame.draw.circle(screen, (0, 255, 0), (25 + x_dist * entries[-1], 30 + y_dist * (len(entries) - 1)), 8)
 
     fonts = pygame.font.Font('freesansbold.ttf', 25)
-    name = fonts.render('FIFO ' + str(movement), True, (255, 255, 255))
+    name = fonts.render('FCFS ' + str(movement), True, (255, 255, 255))
     name_rect = name.get_rect()
     name_rect.center = (500, 650)
     screen.blit(name, name_rect)
